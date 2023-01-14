@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: "NunitoSans";
+    src: url(./font/NunitoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "NunitoSans-xlight";
+    src: url(./font/NunitoSans-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "NunitoSans-SemiBold";
+    src: url(./font/NunitoSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "NunitoSans-Bold";
+    src: url(./font/NunitoSans-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Lulo-1";
+    src: url(./font/Lulo\ Clean\ One\ Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Lulo-2";
+    src: url(./font/Lulo\ Clean\ Two\ Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Lulo-3";
+    src: url(./font/Lulo\ Clean\ Three\ Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Lulo-4";
+    src: url(./font/Lulo\ Clean\ Four\ Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Lulo-0";
+    src: url(./font/Lulo\ Clean\ Outline\ Bold.otf) format("opentype");
+}

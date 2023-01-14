@@ -1,0 +1,208 @@
+@import url("fonts.css");
+
+body{
+    position: relative;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.index_profile {
+    display: inline-flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+}
+
+#index_last{
+    display: flex;
+    flex-direction: column;
+}
+
+.arrangement {
+    margin-inline: 50px;
+    position: relative;
+}
+
+.arrangement :nth-child(1) {
+    justify-content: center;
+}
+
+.arrangement :nth-child(2) {
+    justify-content: right;
+}
+.arrangement :nth-child(3) {
+    justify-content: left;
+}
+
+.arrangement :nth-child(4) {
+    justify-content: right;
+}
+
+
+:is(#landing-spew, #academic, #hobbies) {
+    margin: 50px;
+    color: antiquewhite;
+    padding-inline: 15px;
+    font-family: "NunitoSans-xlight";
+    line-height: 1.5;
+    font-size: 21px;
+    max-width: 700px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+}
+
+.academic_section {
+    display: flex;
+    flex-direction: column;
+}
+
+#gold-highlight {
+    font-family: "NunitoSans-SemiBold";
+    color: var(--primary-color);
+    background-color: #393b39;
+    padding-inline: 5px;
+    padding-block: 2px;
+    border-radius: 5px;
+}
+#acs {
+    margin: 0 50px 0 auto;
+}
+
+:is(#acs, #cv_button) {
+    background-color: var(--secondary-bg-color);
+    max-width: 300px;
+}
+
+#white-highlight {
+    font-family: "NunitoSans-SemiBold";
+    color: rgb(224, 220, 220);
+    background-color: var(--bg-color);
+    padding-inline: 5px;
+    padding-block: 2px;
+    border-radius: 5px;
+}
+
+#about_table {
+    color: antiquewhite;
+    background-color: var(--secondary-bg-color);
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 50px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+.hobby_img {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 1rem;
+    border: 5px solid var(--secondary-bg-color);
+    border-radius: 10px;
+    max-width: 300px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    transition-delay: 200ms;
+}
+
+.images{
+    display: flex;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.images :nth-child(2){
+    transition-delay: 300ms;
+}
+.images :nth-child(3){
+    transition-delay: 500ms;
+}
+.images :nth-child(4){
+    transition-delay: 800ms;
+}
+
+#cv_button {
+    margin: 50px auto;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.car {
+    margin-top: -100px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(100vw, 0);
+    }
+}
+
+#car {
+    animation: 15s cloud-move 1 normal linear;
+}
+
+
+@media all and (max-width: 1399px) {
+    .line-container {
+        display: none;
+    }
+}
+
+.line-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    text-align: center;
+    overflow: hidden;
+    padding-inline: 100px;
+    z-index: -10;
+}
+
+
+.path {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+}

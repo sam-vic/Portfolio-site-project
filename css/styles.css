@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #d4af37;
+    --secondary-color: #e0b354;
+    --bg-color: #393b39;
+    --secondary-bg-color: rgb(104, 86, 60);
+    --h1-color: rgb(156, 156, 156);
+
+    --primary-color-darker: darker(--primary-color, 20%)
+    --secondary-color-darker: darker(--secondary-color, 20%): #e0b354;
+    --bg-color-darker: darker(--bg-color-darker, 20%): #393b39;
+    --secondary-bg-color-darker: darker(--secondary-bg-color-darker, 20%): rgb(104, 86, 60);
+    --h1-color-darker: darker(--h1-color-darker, 20%): rgb(156, 156, 156);
+}

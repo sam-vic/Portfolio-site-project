@@ -1,0 +1,74 @@
+@import url("fonts.css");
+
+#index_hero_button {
+    max-width: 500px;
+    align-self: center;
+}
+
+#index_profile {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#profile-image {
+    width: 300px;
+    height: 375px;
+    z-index: 10;
+    border-radius: 15PX;
+    float: left;
+    margin-inline: 10px;
+    background-color: antiquewhite;
+}
+
+#index_hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section {
+    padding: 10px;
+    
+}
+
+#moutain_wireframe {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -10;
+}
+
+#landing-spew {
+    width: 500%;
+    height: auto;
+    background-color: rgb(146, 137, 125);
+    border-radius: 15px;
+    padding-inline: 15px;
+    font-family: "NunitoSans-xlight";
+    line-height: 1.5;
+    font-size: 21px;
+    max-width: 500px;
+}
+
+#gold-highlight {
+    font-family: "NunitoSans-SemiBold";
+    color: #d4af37;
+    background-color: #000000;
+    padding-inline: 5px;
+    padding-block: 2px;
+    border-radius: 5px;
+}
+
+#white-highlight {
+    font-family: "NunitoSans-SemiBold";
+    color: rgb(224, 220, 220);
+    background-color: #000000;
+    padding-inline: 5px;
+    padding-block: 2px;
+    border-radius: 5px;
+}
