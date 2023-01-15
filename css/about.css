@@ -8,6 +8,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: auto;
+    height: 30vh;
 }
 
 .index_profile {
@@ -32,7 +33,7 @@ h1 {
 }
 
 .arrangement :nth-child(2) {
-    justify-content: right;
+    justify-content: center;
 }
 .arrangement :nth-child(3) {
     justify-content: left;
