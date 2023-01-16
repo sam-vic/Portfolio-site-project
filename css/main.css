@@ -1,6 +1,6 @@
 @import url("fonts.css");
 @import url(styles.css);
-
+/*tag css*/
 header {
     position: absolute;
     z-index: 10;
@@ -13,6 +13,55 @@ header {
     align-items: center;
 }
 
+li {
+    display: inline-block;
+    padding-inline: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+:is(main, section) {
+    position: relative;
+    width: 100%;
+}
+
+section {
+    display: grid;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lulo-1";
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+h2 {
+    margin: auto;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-family: "NunitoSans";
+    text-align: center;
+    max-width: 700px;
+    font-size: 20px;
+    text-align: left;
+}
+
+span, il {
+    font-family: "NunitoSans";
+}
+ul {
+    display: contents;
+}
+/*class css*/
 @supports (display: block) {
     .branding {
         position: absolute;
@@ -41,65 +90,10 @@ header {
             justify-self: center;
         }
     }
-
-    li {
-        display: inline-block;
-        padding-inline: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white
-    }
-
-}
-
-:is(main, section) {
-    position: relative;
-    width: 100%;
 }
 
 .fitscreen {
     height: 100vh;
-}
-
-section {
-    display: grid;
-    align-items: center;
-}
-
-#section-intro {
-    background: linear-gradient(#f5f9fc, #91bfc8);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-content: center;
-}
-
-#landing-desc {
-    text-align: center;
-}
-
-h1, h2, h3 {
-    font-family: "Lulo-1";
-    font-size: 35px;
-    margin-top: 50px;
-}
-
-h2 {
-    margin: auto;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-p {
-    font-family: "NunitoSans";
-    text-align: center;
-    max-width: 700px;
-    font-size: 20px;
-    text-align: left;
 }
 
 .title {
@@ -111,23 +105,12 @@ p {
     line-height: 1.5;
     max-width: 500px;
 }
-
-#section-about {
-    justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
-}
 .about-hero {
     display: inline-flex;
 }
 :is(.about-info, .about-skills) {
     max-width: 50%;
     padding: 30px;
-}
-
-span, il {
-    font-family: "NunitoSans";
-}
-ul {
-    display: contents;
 }
 
 .list {
@@ -151,4 +134,24 @@ ul {
 .skill-arr {
     display: flex;
     flex-wrap: wrap;
+}
+
+.section-proj {
+    justify-content: center;
+}
+
+/*id css*/
+
+#section-about {
+    justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
+}
+#section-intro {
+    background: linear-gradient(#f5f9fc, #91bfc8);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+#landing-desc {
+    text-align: center;
 }
