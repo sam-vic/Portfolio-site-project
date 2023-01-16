@@ -102,16 +102,58 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <a href="mailto:office@careerfoundry.com">Contact me</a>
+            </div>
         </section>
 
         <!--PROJECTS-->
         <section id="section-proj" class="onscroll fitscreen">
-            <h4> Projects</h4>
+            <h4>&lt;code&gt; Projects</h4>
+            <div class="proj-arr">
+                <div class="project-layout">
+                    <div>
+                        <h6>Snow Valley Ski Club</h6>
+                        <div class="proj-desc">This is an on-going project that I facilitate, to redesign a better UI/UX
+                            design and display information in a better formate.
+                        </div>
+                    </div>
+                    <img src="./img/main/svnsc.png" class="proj-card" alt="svnsc" width="450" height="240" />
+                </div>
+                <div class="project-layout">
+                    <div>
+                        <h5>The Peanut Gallery</h5>
+                        <div class="proj-desc">This project explores the use of Next.js and Tailwind, to recreate a
+                            website mimics a gallery for digital contents to be displayed
+                        </div>
+                    </div>
+                    <img src="./img/main/PeanutG.png" class="proj-card" alt="PeanutG" width="450" height="240" />
+                </div>
+            </div>
         </section>
 
         <!--CONTACT-->
         <section id="section-contact" class="onscroll fitscreen">
+            <h1>Contact</h1>
+            <form action="" method="post" class="form-arr" id="contact-form">
+                <div class="grid__item" id="contact-form_items">
+                    <label class="standard-label" for="contact-email">E-mail: </label>
+                    <input type="email" placeholder="Email" id="contact-email" required>
+                </div>
 
+                <div class="grid__item" id="contact-form_items">
+                    <label class="standard-label" for="contact-phone-number">Telephone: </label>
+                    <input type="tel" pattern="\d{3}[\-]\d{3}\d{4}" id="contact-phone-number">
+                </div>
+
+                <div class="grid__item" id="contact-form_items">
+                    <label class="standard-label" for="contact-message">Message: </label>
+                    <textarea required maxlength="420" id="contact-message"></textarea>
+                    <span>*maximum 420 words*</span>
+                    <input type="submit" value="Send message">
+                </div>
+            </form>
         </section>
 
     </main>

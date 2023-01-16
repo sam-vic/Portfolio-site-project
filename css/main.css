@@ -33,17 +33,13 @@ section {
     align-items: center;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Lulo-1";
     font-size: 35px;
-    margin-top: 50px;
+    margin-inline: auto;
 }
 
-h2 {
-    margin: auto;
-}
-
-h3 {
+h3, h5, h6 {
     font-size: 20px;
 }
 
@@ -136,12 +132,35 @@ ul {
     flex-wrap: wrap;
 }
 
-.section-proj {
-    justify-content: center;
+.skill-arr {
+    margin-top: 30px;
+    display: grid;
+}
+
+.proj-arr, .form-arr {
+    display: grid;
+}
+
+.project-layout {
+    display: inline-flex;
+    margin: 1rem;
+}
+.proj-desc {
+    width: 375px;
+    margin: 0 50px 0 0;
+    font-family: "NunitoSans";
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.proj-card {
+    background-size: cover;
+    width: 450px;
+    height: 240px;
+    border-radius: 5px;
 }
 
 /*id css*/
-
 #section-about {
     justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
 }
@@ -154,4 +173,11 @@ ul {
 }
 #landing-desc {
     text-align: center;
+}
+#section-proj {
+    justify-content: center;
+}
+
+#section-contact {
+    justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
 }
