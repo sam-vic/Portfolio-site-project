@@ -43,6 +43,7 @@ h6 {
     font-family: "Lulo-1";
     font-size: 35px;
     margin-inline: auto;
+    z-index: 10;
 }
 
 h3,
@@ -84,21 +85,25 @@ ul {
 }
 
 @keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
+    0% {
+        transform: translate(-30vw, 50px);
+        opacity: 1;
     }
 
-    to {
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
         transform: translate(100vw, 50px);
-        opacity: 0;
+        opacity: 1;
     }
 }
 .dyn-clouds{
     width: 30vw;
     position: absolute;  
-    animation: 5s cloud-move 1 linear;
+    animation: 50s cloud-move infinite linear;
     z-index: 2;
-    opacity: 1;
 }
 
 
@@ -145,7 +150,6 @@ ul {
 .title {
     display: grid;
     justify-items: center;
-    z-index: 10;
 }
 
 .info-p {
@@ -291,7 +295,6 @@ ul {
 
 #landing-desc {
     text-align: center;
-    z-index: 1;
 }
 
 #section-proj {
