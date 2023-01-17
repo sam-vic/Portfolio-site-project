@@ -160,6 +160,14 @@ ul {
     border-radius: 5px;
 }
 
+.form-arr {
+    background-color: #ffff;
+    border-radius: 5px;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+}
+
 /*id css*/
 #section-about {
     justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
