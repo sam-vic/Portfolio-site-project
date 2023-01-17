@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -25,16 +25,16 @@
         <nav class="menubar" role="menubar">
             <ul>
                 <li role="presentation">
-                    <a class="navigation-list__item" role="menuitem" name="Home" href="index.html">Home</a>
+                    <a class="navigation-list__item--active" role="menuitem" id="home" href="index.html">Home</a>
                 </li>
                 <li role="presentation">
-                    <a class="navigation-list__item--active" role="menuitem" name=" About" href="about.html">About</a>
+                    <a class="navigation-list__item" role="menuitem" id="about" href="about.html">About</a>
                 </li>
                 <li role="presentation">
-                    <a class="navigation-list__item" role="menuitem" name=" Work" href="work.html">Work</a>
+                    <a class="navigation-list__item" role="menuitem" id="work" href="work.html">Work</a>
                 </li>
                 <li role="presentation">
-                    <a class="navigation-list__item" role="menuitem" name=" Contact" href="contact.html">Contact</a>
+                    <a class="navigation-list__item" role="menuitem" id="xcontact" href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -53,9 +53,9 @@
                     I use my creativity in combination with new innovative languages and framework to build exciting new
                     features.
                     Skilled in
-                    <span id="white-highlight">HTML</span>,
-                    <span id="white-highlight">JavaScript</span> and
-                    <span id="white-highlight">CSS</span> specialized in React.
+                    <span class="white-highlight">HTML</span>,
+                    <span class="white-highlight">JavaScript</span> and
+                    <span class="white-highlight">CSS</span> specialized in React.
                 </p>
                 <p>
                     Love anything innovative. Currently drawing design inspiration through
@@ -186,14 +186,14 @@
         hiddenElements.forEach((el) => observer.observe(el));
 
     </script>
-</body>
-<script src="js/tota11y.js"></script>
+    <script src="js/tota11y.js"></script>
 
-<footer>
-    <!--Write a reusable function to replace the duplicated elements-->
-    <a><img alt="github" src="./img/icons/github_icon.svg"></a>
-    <a><img alt="twitter" src="./img/icons/twittericon.svg"></a>
-    <a><img alt="linkedin" src="./img/icons/linkedin_icon.svg"></a>
-</footer>
+    <footer>
+        <!--Write a reusable function to replace the duplicated elements-->
+        <a><img alt="github" src="./img/icons/github_icon.svg"></a>
+        <a><img alt="twitter" src="./img/icons/twittericon.svg"></a>
+        <a><img alt="linkedin" src="./img/icons/linkedin_icon.svg"></a>
+    </footer>
+</body>
 
 </html>
