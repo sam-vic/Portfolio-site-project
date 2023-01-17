@@ -1,5 +1,6 @@
 @import url("fonts.css");
 @import url(styles.css);
+
 /*tag css*/
 header {
     position: absolute;
@@ -33,13 +34,20 @@ section {
     align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Lulo-1";
     font-size: 35px;
     margin-inline: auto;
 }
 
-h3, h5, h6 {
+h3,
+h5,
+h6 {
     font-size: 20px;
 }
 
@@ -51,12 +59,15 @@ p {
     text-align: left;
 }
 
-span, il {
+span,
+li{
     font-family: "NunitoSans";
 }
+
 ul {
     display: contents;
 }
+
 /*class css*/
 @supports (display: block) {
     .branding {
@@ -68,9 +79,10 @@ ul {
 
     @media screen and (max-width: 1400px) {
         .branding {
-           display: none;
+            display: none;
         }
     }
+
     .menubar {
         position: absolute;
         z-index: 10;
@@ -85,6 +97,11 @@ ul {
             display: flex;
             justify-self: center;
         }
+    }
+
+    .navigation-list__item--active,
+    .navigation-list__item {
+        font-family: "Lulo-1";
     }
 }
 
@@ -101,9 +118,11 @@ ul {
     line-height: 1.5;
     max-width: 500px;
 }
+
 .about-hero {
     display: inline-flex;
 }
+
 :is(.about-info, .about-skills) {
     max-width: 50%;
     padding: 30px;
@@ -112,7 +131,7 @@ ul {
 .list {
     background-color: var(--bg-color);
     color: #ffff;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     margin-right: 15px;
 }
@@ -121,7 +140,7 @@ ul {
     padding: 10px 20px;
     margin-bottom: 15px;
     margin-right: 15px;
-    background: rgba(153,153,153,.2);
+    background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 600;
     color: #666;
@@ -137,7 +156,9 @@ ul {
     display: grid;
 }
 
-.proj-arr, .form-arr {
+.proj-arr,
+.form-arr,
+.grid_item {
     display: grid;
 }
 
@@ -145,6 +166,7 @@ ul {
     display: inline-flex;
     margin: 1rem;
 }
+
 .proj-desc {
     width: 375px;
     margin: 0 50px 0 0;
@@ -166,12 +188,46 @@ ul {
     max-width: 80rem;
     text-align: right;
     width: 95%;
+    min-width: 70vh;
+    justify-self: center;
+    padding: 2rem;
+    font-family: "NunitoSans";
 }
 
-/*id css*/
-#section-about {
-    justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
+.grid_item {
+    padding: 1rem;
 }
+
+.standard-label {
+    justify-self: baseline;
+    margin-bottom: 15px;
+}
+
+.input-area {
+    color: #333;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    letter-spacing: 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 95%;
+}
+
+.submit-button {
+    width: 30%;
+    padding: 10px 20px;
+    margin-inline: auto;
+    border: none;
+    background: #facf0f;
+    border-radius: 5px;
+    color: #333;
+    font-family: "NunitoSans";
+}
+
+
+/*id css*/
+
 #section-intro {
     background: linear-gradient(#f5f9fc, #91bfc8);
     background-size: cover;
@@ -179,13 +235,26 @@ ul {
     background-repeat: no-repeat;
     align-content: center;
 }
+
+#section-about {
+    justify-content: center;
+    background: linear-gradient(to right, rgb(244 244 244), rgb(242 242 242))
+}
+
+#contact-me{
+    margin-left: 30px;
+}
+
+
 #landing-desc {
     text-align: center;
 }
+
 #section-proj {
     justify-content: center;
 }
 
 #section-contact {
-    justify-content: center;background: linear-gradient(to right,rgb(244 244 244),rgb(242 242 242))
+    justify-content: center;
+    background: linear-gradient(to right, rgb(244 244 244), rgb(242 242 242))
 }

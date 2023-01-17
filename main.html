@@ -105,7 +105,7 @@
             </div>
 
             <div>
-                <a href="mailto:office@careerfoundry.com">Contact me</a>
+                <a class="submit-button" id="contact-me" href="mailto:office@careerfoundry.com">Contact me</a>
             </div>
         </section>
 
@@ -138,22 +138,22 @@
         <section id="section-contact" class="onscroll fitscreen">
             <h1>Contact</h1>
             <form action="submit" method="post" class="form-arr" id="contact-form">
-                <div class="grid__item" id="contact-form_email">
+
+                <div class="grid_item" id="contact-form_name">
+                    <label class="standard-label" for="contact-email">Name: </label>
+                    <input class="input-area" type="text" placeholder="Enter Your Name" id="contact-name" required>
+                </div>
+
+                <div class="grid_item" id="contact-form_email">
                     <label class="standard-label" for="contact-email">E-mail: </label>
-                    <input type="email" placeholder="Email" id="contact-email" required>
+                    <input class="input-area" type="email" placeholder="Enter Your Email" id="contact-email" required>
                 </div>
 
-                <div class="grid__item" id="contact-form_phone">
-                    <label class="standard-label" for="contact-phone-number">Telephone: </label>
-                    <input type="tel" pattern="\d{3}[\-]\d{3}\d{4}" id="contact-phone-number" required>
-                </div>
-
-                <div class="grid__item" id="contact-form_messages">
+                <div class="grid_item" id="contact-form_messages">
                     <label class="standard-label" for="contact-message">Message: </label>
-                    <textarea required maxlength="420" id="contact-message"></textarea>
-                    <span>*maximum 420 words*</span>
-                    <input type="submit" value="Send message">
+                    <textarea class="input-area" required maxlength="1000" id="contact-message" placeholder="Enter Your Message:"></textarea>
                 </div>
+                <input class="submit-button" type="submit" value="Submit">
             </form>
         </section>
 
