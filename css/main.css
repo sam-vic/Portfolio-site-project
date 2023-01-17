@@ -69,6 +69,39 @@ ul {
 }
 
 /*class css*/
+.static-clouds-left {
+    width: 50vw;
+    position: absolute;
+    bottom: -30vh;
+    left: -20vw;
+}
+.static-clouds-right {
+    width: 50vw;
+    position: absolute;
+    bottom: -30vh;
+    right: -20vw;
+    rotate: 305deg;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(100vw, 50px);
+        opacity: 0;
+    }
+}
+.dyn-clouds{
+    width: 30vw;
+    position: absolute;  
+    animation: 5s cloud-move 1 linear;
+    z-index: 2;
+    opacity: 1;
+}
+
+
 @supports (display: block) {
     .branding {
         position: absolute;
@@ -112,6 +145,7 @@ ul {
 .title {
     display: grid;
     justify-items: center;
+    z-index: 10;
 }
 
 .info-p {
@@ -257,6 +291,7 @@ ul {
 
 #landing-desc {
     text-align: center;
+    z-index: 1;
 }
 
 #section-proj {
