@@ -211,12 +211,32 @@ ul {
     margin: 1rem;
 }
 
+.sub-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj-header {
+    margin-inline: unset;
+}
+
 .proj-desc {
     width: 375px;
     margin: 0 50px 0 0;
     font-family: "NunitoSans";
     line-height: 1.5;
     font-size: 16px;
+}
+
+.web-link {
+    width: 110px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #facf0f;
+    border-radius: 5px;
+    color: #333;
+    font-family: "NunitoSans";
 }
 
 .proj-card {
