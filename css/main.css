@@ -78,7 +78,7 @@ p {
     }
 
     h2, h4, h5 {
-        margin: 10% auto;
+        margin: 10% auto 5%;
     }
 }
 
@@ -299,7 +299,7 @@ ul {
     font-family: "NunitoSans";
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
 
     .branding {
         display: none;
@@ -323,11 +323,33 @@ ul {
     }
 
     :is(.about-info, .about-skills) {
+        padding: 20px;
+    }
+
+    .skill-arr {
+        margin-top: 10px;
+    }
+
+    .list {
+        margin: unset;
+    }
+
+    :is(.about-info, .about-skills) {
         max-width: unset;
+    }
+
+    .proj-arr {
+        width: 100%;
     }
 
     .project-layout {
         flex-direction: column;
+        margin-inline: 5%;
+    }
+
+    .proj-desc {
+        margin: unset;
+        width: unset;
     }
 
     .proj-card {
@@ -386,7 +408,7 @@ ul {
     background: linear-gradient(to right, rgb(244 244 244), rgb(242 242 242))
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
 
     #section-about, #section-proj, #section-contact {
         display: flex;
@@ -400,5 +422,10 @@ ul {
 
     #skill-svg {
         height: 20vh;
+    }
+
+    #contact-me {
+        margin: unset;
+        width: 200px;
     }
 }
