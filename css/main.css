@@ -2,6 +2,11 @@
 @import url(styles.css);
 
 /*tag css*/
+
+* {
+    box-sizing: border-box;
+}
+
 header {
     position: absolute;
     z-index: 10;
@@ -60,8 +65,25 @@ p {
     text-align: left;
 }
 
+@media screen and (max-width: 1400px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-size: 100%;
+        max-width: 700px;
+    }
+
+    h2, h4, h5 {
+        margin: 10% auto 5%;
+    }
+}
+
 span,
-li{
+li {
     font-family: "NunitoSans";
 }
 
@@ -76,6 +98,7 @@ ul {
     bottom: -30vh;
     left: -20vw;
 }
+
 .static-clouds-right {
     width: 50vw;
     position: absolute;
@@ -99,9 +122,10 @@ ul {
         opacity: 1;
     }
 }
-.dyn-clouds{
+
+.dyn-clouds {
     width: 30vw;
-    position: absolute;  
+    position: absolute;
     animation: 50s cloud-move infinite linear;
     z-index: 2;
 }
@@ -115,32 +139,18 @@ ul {
         left: 1.75rem;
     }
 
-    @media screen and (max-width: 1400px) {
-        .branding {
-            display: none;
-        }
-    }
-
-    .menubar {
-        position: absolute;
-        z-index: 10;
-        cursor: pointer;
-        right: 1.75rem;
-    }
-
-    @media screen and (max-width: 1400px) {
-        .menubar {
-            right: unset;
-            font-size: 15px;
-            display: flex;
-            justify-self: center;
-        }
-    }
-
     .navigation-list__item--active,
     .navigation-list__item {
         font-family: "Lulo-1";
     }
+}
+
+
+.menubar {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    right: 1.75rem;
 }
 
 .fitscreen {
@@ -289,6 +299,77 @@ ul {
     font-family: "NunitoSans";
 }
 
+@media screen and (max-width: 900px) {
+
+    .branding {
+        display: none;
+    }
+
+    .menubar {
+        right: unset;
+        font-size: 10px;
+        display: flex;
+        justify-self: center;
+    }
+
+    .info-p {
+        line-height: 1.5;
+        max-width: unset;
+    }
+
+    .about-hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    :is(.about-info, .about-skills) {
+        padding: 20px;
+    }
+
+    .skill-arr {
+        margin-top: 10px;
+    }
+
+    .list {
+        margin: unset;
+    }
+
+    :is(.about-info, .about-skills) {
+        max-width: unset;
+    }
+
+    .proj-arr {
+        width: 100%;
+    }
+
+    .project-layout {
+        flex-direction: column;
+        margin-inline: 5%;
+    }
+
+    .proj-desc {
+        margin: unset;
+        width: unset;
+    }
+
+    .proj-card {
+        display: none;
+    }
+
+    .form-arr {
+        min-width: 30vh;
+        padding: unset;
+    }
+
+    .input-area {
+        width: unset;
+    }
+
+    .submit-button {
+        margin: 30px auto;
+    }
+}
+
 
 /*id css*/
 
@@ -298,6 +379,7 @@ ul {
     background-position: center center;
     background-repeat: no-repeat;
     align-content: center;
+    overflow: hidden;
 }
 
 #section-about {
@@ -305,7 +387,7 @@ ul {
     background: linear-gradient(to right, rgb(244 244 244), rgb(242 242 242))
 }
 
-#contact-me{
+#contact-me {
     margin: 0 0 30px 30px;
     display: flex;
     width: 100px;
@@ -324,4 +406,26 @@ ul {
 #section-contact {
     justify-content: center;
     background: linear-gradient(to right, rgb(244 244 244), rgb(242 242 242))
+}
+
+@media screen and (max-width: 900px) {
+
+    #section-about, #section-proj, #section-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    #landing-desc {
+        margin-inline: 30px;
+    }
+
+    #skill-svg {
+        height: 20vh;
+    }
+
+    #contact-me {
+        margin: unset;
+        width: 200px;
+    }
 }
