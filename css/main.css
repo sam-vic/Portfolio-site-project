@@ -3,6 +3,11 @@
 
 /*tag css*/
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
 * {
     box-sizing: border-box;
 }
