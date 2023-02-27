@@ -1,11 +1,11 @@
-@import url("fonts.css");
-@import url(styles.css);
-
-/*tag css*/
 
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 30px;
+}
+
+body{
+    font-family: 'Poppins';
 }
 
 * {
@@ -18,7 +18,6 @@ header {
     padding-top: 3em;
     width: 100%;
     background: var(--bg-color);
-    font-family: "Lulo-1";
     height: 55px;
     display: grid;
     align-items: center;
@@ -50,7 +49,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lulo-1";
     font-size: 35px;
     margin-inline: auto;
     z-index: 10;
@@ -63,7 +61,6 @@ h6 {
 }
 
 p {
-    font-family: "NunitoSans";
     text-align: center;
     max-width: 700px;
     font-size: 20px;
@@ -87,10 +84,6 @@ p {
     }
 }
 
-span,
-li {
-    font-family: "NunitoSans";
-}
 
 ul {
     display: contents;
@@ -142,11 +135,6 @@ ul {
         text-align: left;
         color: white;
         left: 1.75rem;
-    }
-
-    .navigation-list__item--active,
-    .navigation-list__item {
-        font-family: "Lulo-1";
     }
 }
 
@@ -238,7 +226,6 @@ ul {
 .proj-desc {
     width: 375px;
     margin: 0 50px 0 0;
-    font-family: "NunitoSans";
     line-height: 1.5;
     font-size: 16px;
 }
@@ -251,7 +238,6 @@ ul {
     background: #facf0f;
     border-radius: 5px;
     color: #333;
-    font-family: "NunitoSans";
 }
 
 .proj-card {
@@ -270,7 +256,6 @@ ul {
     min-width: 70vh;
     justify-self: center;
     padding: 2rem;
-    font-family: "NunitoSans";
 }
 
 .grid_item {
@@ -301,7 +286,6 @@ ul {
     background: #facf0f;
     border-radius: 5px;
     color: #333;
-    font-family: "NunitoSans";
 }
 
 @media screen and (max-width: 900px) {
